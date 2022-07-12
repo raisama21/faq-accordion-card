@@ -1,0 +1,68 @@
+@media (min-width: 48.75rem) {
+  main {
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 56.25rem;
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    align-items: center;
+  }
+
+  .main-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img,
+  .box-img {
+    display: block;
+  }
+
+  .desktop-img {
+    padding-block: 5rem;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 102% 67%;
+    transform: translateX(-4rem);
+  }
+
+  .box-img {
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    padding-top: 0;
+  }
+
+  .accordion {
+    width: 100%;
+    justify-self: left;
+    padding-right: 95px;
+    margin-bottom: 0;
+  }
+
+  .accordion-header {
+    &:hover {
+      cursor: pointer;
+      color: var(--soft-red);
+    }
+  }
+
+  .accordion-body {
+    font-size: 12px;
+  }
+
+  .accordion-header {
+    padding: 0;
+  }
+}
